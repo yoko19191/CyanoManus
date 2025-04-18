@@ -5,14 +5,17 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
+    "e2b-code-interpreter>=1.2.0",
+    "firecrawl-py>=1.16.0",
     "httpx[socks]>=0.28.1",
     "openai-agents>=0.0.9",
     "python-dotenv>=1.1.0",
     "rich>=14.0.0",
+    "tavily-python>=0.5.4",
 ]
 
 [dependency-groups]
 dev = [
     "ipykernel>=6.29.5",
-    "langsmith>=0.3.27",
+    "langsmith[openai-agents]>=0.3.27",
 ]
