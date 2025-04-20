@@ -1,7 +1,5 @@
-# CyanoManus
-
 <h1 align="center">
-  CyanoManus
+  🤖 CyanoManus : Extensible Design Enable Adaptive Agents. Your Infinite General Purpose Multi-Agent Assistant.
 </h1>
 
 <p align="center">
@@ -14,46 +12,38 @@ The name "CyanoManus" is derived from Cyanobacteria, reflecting our aspiration t
 
 ## ✨️ Core Features
 
-
 ## 🛠️ Installation
 
+```bash
+
+```
 
 ## 🚀 Quick Start
 
+**Setup Environment Variables**
 
 ## 💡 Concepts
 
-- Orchestraion
-  - Guardrail
-  - Agent
-    - Tools
-    - Context(Memory)
+Building upon the existing OpenAI Agents SDK, we've abstracted the concept of Orchestrator to describe the system architecture:
 
-Agent
+- Orchestrator(constraint)
+  - Guardrail (constraint)
+  - Agent (modular)
+    - Tools(microservice)
+    - OutputType(constraint)
 
-CyanoManus implements a hierarchical agent structure where specialized agents collaborate to complete complex tasks:
+We've observed that traditional hierarchical determinate workflows often struggle when facing real production scenarios with scattered user input. These workflows frequently encounter unforeseen scenarios and corner cases, requiring constant prompt adjustments and component additions. This makes the entire workflow increasingly tangled and convoluted, leading to a complexity management disaster. To prevent such issues, we advocate for less rigid structure for agents, allowing the system to explore solutions autonomously. We provide a series of adaptive components, adhering to the principle of minimal abstraction, to help users flexibly handle various challenging problems. This approach ensures the system remains controllable while being more adaptive to unseen environments.
 
-- **Coordinator**: Manages user interaction and overall workflow
-- **Planner**: Develops strategies for task completion
-- **Supervisor**: Oversees specialized agents
-- **Researcher**: Gathers and analyzes information
-- **Coder**: Handles programming tasks
-- **Operator**: Executes system operations
-- **Retriever**: Searches and retrieves relevant data
-- **Reporter**: Compiles and presents results to users
+- Adaptive Components
+  - Atomic Orchestrator -> voting, react, codeact...
+  - Dynamic Hooks -> various callbacks
+  - Dynamic Prompt -> context management, dynamic agent instruction modification, handoff description
+  - Adaptive Context Managment
+  - Decorator -> hot-loading Agent InputType, OutputType...
 
-
-## 👀 Examples
-
-
-## 🤝 Contributing
-
+## 👀 Demos
 
 ## 🧪 Future Plans
-
-## Acknowledgements
-
-The project and agent design were significantly inspired by the now-defunct LangManus project. CyanoManus stands on the shoulders of giants, leveraging powerful foundation models and the broader open-source community.
 
 ## 📜 License
 

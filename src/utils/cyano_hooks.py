@@ -1,7 +1,7 @@
 """Project hooks for better observe life-cycle of agents
 
 Hooks(class):
-- class CyanoAgentHooks(AgentHooks)
+1. class CyanoAgentHooks(AgentHooks) :  
 
 
 """
