@@ -15,7 +15,7 @@ The name "CyanoManus" is derived from Cyanobacteria, reflecting our aspiration t
 ## 🛠️ Installation
 
 ```bash
-
+git clone git@github.com:yoko19191/CyanoManus.git
 ```
 
 ## 🚀 Quick Start
@@ -32,7 +32,7 @@ Building upon the existing OpenAI Agents SDK, we've abstracted the concept of Or
     - Tools(microservice)
     - OutputType(constraint)
 
-We've observed that traditional hierarchical determinate workflows often struggle when facing real production scenarios with scattered user input. These workflows frequently encounter unforeseen scenarios and corner cases, requiring constant prompt adjustments and component additions. This makes the entire workflow increasingly tangled and convoluted, leading to a complexity management disaster. To prevent such issues, we advocate for less rigid structure for agents, allowing the system to explore solutions autonomously. We provide a series of adaptive components, adhering to the principle of minimal abstraction, to help users flexibly handle various challenging problems. This approach ensures the system remains controllable while being more adaptive to unseen environments.
+We've observed that traditional hierarchical determinate workflows often struggle when facing real production scenarios with scattered user input. These workflows frequently encounter unforeseen scenarios and corner cases, requiring constant prompt adjustments and component additions. This makes the entire workflow increasingly tangled and rigmarole, leading to a complexity management disaster. To prevent such issues, we advocate for less rigid structure for agents, allowing the system to explore solutions autonomously. We provide a series of adaptive components, adhering to the principle of minimal abstraction, to help users flexibly handle various challenging problems. This approach ensures the system remains controllable while being more adaptive to unseen environments.
 
 - Adaptive Components
   - Atomic Orchestrator -> voting, react, codeact...

@@ -13,6 +13,13 @@ TOOLS_AVAILABLE:
 8. search_files: Recursively search files/directories
 9. get_file_info: Get file/directory metadata
 10. list_allowed_directories: List allowed directories for access
+
+
+# file_read - 读取文件内容
+# file_write - 写入或追加内容到文件
+# file_str_replace - 替换文件中的指定字符串
+# file_find_in_content - 在文件内容中搜索匹配文本
+# file_find_by_name - 在指定目录中通过名称模式查找文件
 """
 
 from agents import function_tool

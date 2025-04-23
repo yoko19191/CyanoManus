@@ -1,9 +1,7 @@
 """ 
 
 TOOLS_AVAILABLE:
-1. local_py_inter
-2. e2b_py_inter
-3. 
+1. local_py_inter 
 """
 
 from agents import function_tool
@@ -169,10 +167,5 @@ def local_py_inter(
             }, 
             ensure_ascii=False
         )
-
-
-
-
-
 
 

@@ -14,7 +14,7 @@ from rich.text import Text
 from rich.markdown import Markdown
 
 
-class CyanoAgentHooks(AgentHooks):
+class RichPrintAgentHooks(AgentHooks):
     """Friendly printing various lifecycle events callback from a specific running agent.
     Using this hooks when you need to observe the life-cycle of an agent for general purpose.
     Args:
