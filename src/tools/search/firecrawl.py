@@ -2,7 +2,7 @@ from agents import function_tool
 
 from dotenv import find_dotenv, load_dotenv
 import os
-from typing import Dict, Any, List, Optional, Union
+from typing import Dict, Any, List, Literal, Optional, Union
 import json # Added for formatting results
 
 _ = load_dotenv(find_dotenv())
@@ -15,6 +15,62 @@ if not api_key:
     raise ValueError("FIRECRAWL_API_KEY not found in environment variables.")
 
 app = FirecrawlApp(api_key=api_key)
+
+
+def firecrawl_scrape(url: str):
+    """Turn any url into clean data.
+
+    Args:
+        url (str): The URL of the website to scrape and extract data from.
+
+    Returns:
+        _type_: _description_
+    """
+    return None
+
+
+
+def firecrawl_crawl(starting_url: str):
+    """Recursively search through a urls subdomains, and gather the content.
+
+    Args:
+        starting_url (str): The base URL to start crawling from.
+    """
+    return None 
+
+
+def firecrwal_crawl_job(job_id: str, operations: Literal['get', 'cancel']):
+    """Retrieve the scraping results based on the job ID, or cancel the scraping task.
+
+    Args:
+        job_id (str): Set wait_for_results to false in the Crawl tool can get the job ID.
+        operations (Literal[&#39;get&#39;, &#39;cancel&#39;]):choose the operation to perform. `get` is for getting the crawl status, `cancel` is for cancelling the crawl job.
+
+    Returns:
+        _type_: _description_
+    """
+
+    return None
+
+
+
+def firecrawl_map(
+    starting_url: str, 
+    search: str
+    ):
+    """Input a website and get all the urls on the website - extremly fast
+
+    Args:
+        starting_url (str): The base URL to start crawling from.
+        search (str): Search query to use for mapping. During the Alpha phase, the 'smart' part of the search functionality is limited to 100 search results. However, if map finds more results, there is no limit applied.
+
+    Returns:
+        _type_: _description_
+    """
+    return None
+
+
+
 
 
 # --- Helper Functions ---
